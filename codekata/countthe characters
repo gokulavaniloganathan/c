@@ -1,1 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+int count[26]={1},k=0;
+char ch[26];
+scanf("%s",ch);
+int i,j;
+for(i=0;ch[i]!='\0';i++)
+{
+	for(j=i+1;ch[j]!='\0';j++)
+	{
+		if(ch[i]==ch[j])
+		{
+			count[k]++;
+			ch[j]='@';
+		}
+	}
+	k++;
+	
+}
+for(i=0;ch[i]!='\0';i++)
+{
+	printf("%c - %d",ch[i],count[i]);
+}
+	return 0;
+}
 
