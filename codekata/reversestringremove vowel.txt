@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<string.h>
+int main(void) {
+char ch[20];
+int n,i,j;
+gets(ch);
+n=strlen(ch);
+for(i=0,j=n-1;i<n/2&&j>=0;i++,j--)
+{int temp=ch[i];
+ ch[i]=ch[j];
+ ch[j]=temp;
+}
+printf("%s",ch);
+for(i=0;i<n;i++)
+{
+	if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u')
+	ch[i]='@';
+}
+for(i=0;i<n;i++)
+{
+if(ch[i]>=97&&ch[i]<=122)
+{
+	printf("%c",ch[i]);
+}
+}
+	return 0;
+}
