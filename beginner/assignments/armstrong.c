@@ -7,7 +7,7 @@ int main()
  scanf("%ld",&a);
  b=a;
 c=a;
- while(a!=0)
+ while(a>0)
 {
  a=a/10;
 n++;
