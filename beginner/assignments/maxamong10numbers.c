@@ -2,25 +2,25 @@
 int main()
 {
 	int arr[10];
-	int i,max=0,temp;
+	int i,m=0,temp;
 	
 	for(i=0;i<10;i++)
 	{
 		scanf("%d ",&arr[i]);
 		
 	}
-	max=arr[0];
+	m=arr[0];
 	for(i=1;i<10;i++)
 	{
-		if(max<arr[i])
+		if(m<arr[i])
 		{
-			temp=max;
-			max=arr[i];
+			temp=m;
+			m=arr[i];
 			arr[i]=temp;
 			
 		}
 		
 	}
-	printf("%d",max);
+	printf("%d",m);
 	return 0;
 }
