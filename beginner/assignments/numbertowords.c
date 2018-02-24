@@ -5,51 +5,51 @@ int main()
 	scanf("%d",&n);
 	if(n==1)
 	{
-		printf("one");
+		printf("One");
 		
 	}
 	else if(n==2)
 	{
-		printf("two");
+		printf("Two");
 		
 	}
     else if(n==3)
     {
-    	printf("three");
+    	printf("Three");
     	
 	}
 	else if(n==4)
 	{
-		printf("four");
+		printf("Four");
 	}
 	else if(n==5)
 	{
-		printf("five");
+		printf("Five");
 		
 	}
 	else if(n==6)
 	{
-		printf("six");
+		printf("Six");
 		
 	}
 	else if(n==7)
 	{
-		printf("seven");
+		printf("Seven");
 		
 	}
 	else if(n==8)
 	{
-		printf("eight");
+		printf("Eight");
 		
 	}
 	else if(n==9)
 	{
-		printf("nine");
+		printf("Nine");
 		
 	}
 	else if(n==10)
 	{
-		printf("ten");
+		printf("Ten");
 		
 	}
 	else
