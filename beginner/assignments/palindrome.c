@@ -1,18 +1,27 @@
 #include<stdio.h>
 int main()
 {
- int a,n,d,sum=0;
-scanf("%d",&n);
-d=n;
-while(n!=0)
-{
- a=n%10;
- sum=sum*10+a;
- n=n/10;
-}
-if(sum==d)
-printf("yes");
-else
-printf("no");
-return 0;
+	char s[100];
+	fgets(s,100,stdin);
+	int i,j,flag=0;
+	for(i=0;s[i]!='\0';i++);
+
+	int n=i;
+	
+	for(i=0,j=n-1;i<n/2;i++,j--)
+	{ 
+		if(s[i]!=s[j])
+        {
+        	flag=1;
+        	break;
+		}
+		
+	}
+	if(flag==1)
+	{
+		printf("no");
+	}
+	else
+	printf("yes");
+	return 0;
 }
