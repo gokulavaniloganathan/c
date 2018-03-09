@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	long long int n;
-	scanf("%lld",&n);
-	long long int i,c;
-	int count=0;
-	while(n!=0)
-	{
-		c=n%10;
-		n=n/10;
-		count++;
-	}
-	printf("%d",count);
-	return 0;
+int n;
+scanf("%d",&n);
+int i=0,d;
+while(n!=0)
+{
+ d=n%10;
+ n=n/10;
+ i++;
+}
+printf("%d",i);
+return 0;
 }
